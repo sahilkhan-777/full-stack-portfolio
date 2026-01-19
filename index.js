@@ -11,7 +11,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/about", (req, res) => {
-    res.render("about.ejs");
+    res.render("about.ejs", { skills: skills});
 });
 
 app.get("/projects", (req, res) => {
@@ -63,5 +63,40 @@ const featuredProjects = [
         description: 'A simple and intuitive todo app built with HTML, CSS, and JavaScript.',
         link: 'https://sahilkhan-777.github.io/todoApp',
         thumbnail: '/images/todoapp.png'
+    }
+]
+
+const skills = [
+    {
+        name: 'ReactJs',
+        icon: '/images/svg/react.svg'
+    },
+    {
+        name: 'ExpressJs',
+        icon: '/images/svg/express.svg'
+    },
+    {
+        name: 'NodeJs',
+        icon: '/images/svg/node.svg'
+    },
+    {
+        name: 'Bootstrap',
+        icon: '/images/svg/bootstrap.svg'
+    },
+    {
+        name: 'JavaScript',
+        icon: '/images/svg/javascript.svg'
+    },
+    {
+        name: 'HTML5',
+        icon: '/images/svg/html.svg'
+    },
+    {
+        name: 'CSS3',
+        icon: '/images/svg/css.svg'
+    },
+    {
+        name: 'EJS',
+        icon: '/images/svg/ejs.png'
     }
 ]
