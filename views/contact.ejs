@@ -1,5 +1,44 @@
 <%- include('partials/header.ejs') %>
 
-<h1>Contact Me</h1>
+<main class="form-signin w-50 m-auto">
+  <form class="my-5">
+    <img
+      class="mb-4 rounded-circle"
+      src="/images/profile.webp"
+      alt=""
+      width="70"
+      height="70"
+    />
+    <h1 class="h3 mb-3 fw-normal">Contact Me</h1>
+    <div class="form-floating">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingInput"
+        placeholder="Enter your name"
+      />
+      <label for="floatingInput">Name</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="name@example.com"
+      />
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating">
+      <textarea
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Message"
+        style="height: 100px"
+      ></textarea>
+      <label for="floatingPassword">Message</label>
+    </div>
+    <button class="btn btn-primary w-100 py-2" type="submit">Send Message</button>
+  </form>
+</main>
 
 <%- include('partials/footer.ejs') %>
