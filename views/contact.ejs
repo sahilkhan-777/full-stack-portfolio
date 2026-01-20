@@ -1,6 +1,6 @@
 <%- include('partials/header.ejs') %>
 
-<main class="form-signin w-50 m-auto">
+<main class="form-signin w-sm-100 w-50 m-auto">
   <form class="my-5">
     <img
       class="mb-4 rounded-circle"
@@ -10,30 +10,34 @@
       height="70"
     />
     <h1 class="h3 mb-3 fw-normal">Contact Me</h1>
-    <div class="form-floating">
+    <div class="form-floating mb-2">
       <input
         type="text"
         class="form-control"
         id="floatingInput"
         placeholder="Enter your name"
+        required
       />
       <label for="floatingInput">Name</label>
     </div>
-    <div class="form-floating">
+    <div class="form-floating mb-2">
       <input
         type="email"
         class="form-control"
         id="floatingInput"
         placeholder="name@example.com"
+        required
       />
       <label for="floatingInput">Email address</label>
     </div>
-    <div class="form-floating">
+    <div class="form-floating mb-2">
       <textarea
         class="form-control"
         id="floatingPassword"
         placeholder="Message"
         style="height: 100px"
+        required
+        min="25"
       ></textarea>
       <label for="floatingPassword">Message</label>
     </div>
