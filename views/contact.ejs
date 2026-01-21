@@ -1,7 +1,6 @@
 <%- include('partials/header.ejs') %>
 
-<main class="form-signin w-sm-100 w-50 m-auto">
-  <form class="my-5">
+  <form class="my-5 m-auto form-signin" id="contactForm" style="max-width: 400px;">
     <img
       class="mb-4 rounded-circle"
       src="/images/profile.webp"
@@ -14,35 +13,37 @@
       <input
         type="text"
         class="form-control"
-        id="floatingInput"
+        id="name"
         placeholder="Enter your name"
         required
+        name="name"
       />
-      <label for="floatingInput">Name</label>
+      <label for="name">Name</label>
     </div>
     <div class="form-floating mb-2">
       <input
         type="email"
         class="form-control"
-        id="floatingInput"
+        id="email"
         placeholder="name@example.com"
         required
+        name="email"
       />
-      <label for="floatingInput">Email address</label>
+      <label for="email">Email address</label>
     </div>
     <div class="form-floating mb-2">
       <textarea
         class="form-control"
-        id="floatingPassword"
+        id="textAreaMessage"
         placeholder="Message"
         style="height: 100px"
         required
         min="25"
+        name="message"
       ></textarea>
-      <label for="floatingPassword">Message</label>
+      <label for="textAreaMessage">Message</label>
     </div>
-    <button class="btn btn-primary w-100 py-2" type="submit">Send Message</button>
+    <button class="btn btn-primary w-100 py-2" id="submitBtn" type="submit">Send Message</button>
   </form>
-</main>
 
 <%- include('partials/footer.ejs') %>
