@@ -20,8 +20,11 @@
   },
   "homepage": "https://github.com/sahilkhan-777/full-stack-portfolio#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "ejs": "^4.0.1",
     "express": "^5.2.1",
-    "node": "^25.3.0"
+    "node": "^25.3.0",
+    "nodemailer": "^7.0.12"
   }
 }
